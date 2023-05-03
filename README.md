@@ -1,3 +1,3 @@
 # opentrons
 
-Repositório para algoritmos do Opentrons
+Repositório para algoritmos de automação de protocolos do Opentrons
