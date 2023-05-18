@@ -44,7 +44,10 @@ def run(protocol: protocol_api.ProtocolContext):
              "A10","B10","C10","D10","E10","F10","G10","H10",
              "A11","B11","C11","D11","E11","F11","G11","H11",
              "A12","B12","C12","D12","E12","F12","G12","H12"]
-    plate_pocos = [plate[poco] for poco in pocos]
+    # plate_pocos = [plate[poco] for poco in pocos]
+    plate_pocos = []
+    for poco in pocos:
+        plate_pocos.append(plate[poco])
     right_pipette.transfer(8.5, eppendorf_primer["A1"], plate_pocos)
 
 # Pipetar o NTC_RSB_Lote_129_O
